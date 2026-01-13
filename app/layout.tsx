@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Just Fucking Use shadcn/ui",
+  title: "Just Fucking Use Shadcn",
   description:
-    "Stop overthinking your UI components. shadcn/ui gives you beautifully designed, accessible components you actually own. Copy, paste, customize. It just works.",
+    "Stop overthinking your UI components. Shadcn gives you beautifully designed, accessible components you actually own. Copy, paste, customize. It just works.",
   keywords: [
     "shadcn",
     "shadcn/ui",
