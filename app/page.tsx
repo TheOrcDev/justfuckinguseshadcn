@@ -1,4 +1,5 @@
 import { AlertCircle, ArrowRight, Check, Terminal } from "lucide-react";
+import Link from "next/link";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -288,13 +289,13 @@ export default function Home() {
 
           <div className="mb-16 flex justify-center">
             <Button asChild size="lg">
-              <a
+              <Link
                 href="https://ui.shadcn.com"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Get started <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
+              </Link>
             </Button>
           </div>
 
@@ -302,24 +303,31 @@ export default function Home() {
 
           <p className="text-center text-muted-foreground text-sm leading-relaxed">
             Inspired by{" "}
-            <a
+            <Link
               className="underline underline-offset-4 hover:text-foreground"
               href="https://justfuckingusetailwind.com"
               rel="noopener noreferrer"
               target="_blank"
             >
               justfuckingusetailwind.com
-            </a>
+            </Link>
             ,{" "}
-            <a
+            <Link
               className="underline underline-offset-4 hover:text-foreground"
               href="https://motherfuckingwebsite.com"
               rel="noopener noreferrer"
               target="_blank"
             >
               motherfuckingwebsite.com
-            </a>
-            , and all the other &quot;just fucking use&quot; sites.
+            </Link>
+            , and all the other &quot;just fucking use&quot; sites. Built by{" "}
+            <Link
+              className="underline underline-offset-4 hover:text-foreground"
+              href="https://orcdev.com"
+            >
+              OrcDev
+            </Link>{" "}
+            with 🪓
           </p>
         </div>
       </section>
