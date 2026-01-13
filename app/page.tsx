@@ -1,19 +1,20 @@
 import { AlertCircle, ArrowRight, Check, Terminal } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <article className="w-full">
       {/* Hero Section */}
-      <section className="px-6 py-20 md:py-32">
+      <section className="flex flex-col gap-10 px-6 py-20 md:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <p className="mb-6 text-lg text-muted-foreground">
             Stop overthinking your UI components
           </p>
           <h1 className="mb-8 font-black text-5xl leading-tight md:text-7xl md:leading-tight">
             Just Fucking Use{" "}
-            <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent">
               shadcn/ui
             </span>
           </h1>
@@ -22,6 +23,13 @@ export default function Home() {
             specificity, and maintaining component libraries nobody asked for.
             That ends today.
           </p>
+        </div>
+
+        <div className="flex justify-center">
+          <Avatar className="size-96">
+            <AvatarImage src="/shadcn.jpeg" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
         </div>
       </section>
 
