@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <article className="w-full">
       {/* Hero Section */}
-      <section className="flex flex-col gap-10 px-6 py-20 md:py-32">
+      <section className="flex flex-col gap-10 px-6 py-14">
         <div className="mx-auto max-w-3xl text-center">
           <p className="mb-6 text-lg text-muted-foreground">
             Stop overthinking your UI components
