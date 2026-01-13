@@ -14,10 +14,7 @@ export default function Home() {
             Stop overthinking your UI components
           </p>
           <h1 className="mb-8 font-black text-5xl leading-tight md:text-7xl md:leading-tight">
-            Just Fucking Use{" "}
-            <span className="bg-linear-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              shadcn/ui
-            </span>
+            Just Fucking Use Shadcn
           </h1>
           <p className="mx-auto max-w-2xl text-muted-foreground text-xl leading-relaxed">
             You&apos;ve spent years building buttons from scratch, fighting CSS

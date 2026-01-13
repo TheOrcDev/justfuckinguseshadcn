@@ -37,6 +37,12 @@ export const metadata: Metadata = {
       "Stop overthinking your UI components. Copy, paste, customize. It just works.",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/og.png",
+        alt: "Just Fucking Use Shadcn",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
