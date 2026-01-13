@@ -130,9 +130,9 @@ export default function Home() {
 
           <h3 className="mb-4 font-bold text-xl">Accessibility built-in</h3>
           <p className="mb-6 text-lg text-muted-foreground leading-relaxed">
-            Built on Radix UI primitives. Keyboard navigation, screen reader
-            support, focus management - all handled. Stop pretending you were
-            going to add that yourself.
+            Built on battle-tested primitives - choose between Radix UI or Base
+            UI. Keyboard navigation, screen reader support, focus management -
+            all handled. Stop pretending you were going to add that yourself.
           </p>
 
           <Alert className="mb-8">
@@ -154,9 +154,17 @@ export default function Home() {
           </p>
 
           <h3 className="mb-4 font-bold text-xl">Tailwind under the hood</h3>
-          <p className="mb-16 text-lg text-muted-foreground leading-relaxed">
+          <p className="mb-8 text-lg text-muted-foreground leading-relaxed">
             Styled with Tailwind CSS. Which means you already know how to
             customize it. No proprietary styling API to learn.
+          </p>
+
+          <h3 className="mb-4 font-bold text-xl">AI speaks shadcn fluently</h3>
+          <p className="mb-16 text-lg text-muted-foreground leading-relaxed">
+            Every AI model knows shadcn/ui. Claude, GPT, Copilot - they&apos;ve
+            all been trained on it. Ask for a component and get production-ready
+            code instantly. This is the future of UI development: you describe
+            what you want, AI builds it with shadcn. No more Googling docs.
           </p>
 
           <h2 className="mb-8 font-extrabold text-3xl">
