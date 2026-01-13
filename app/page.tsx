@@ -184,9 +184,10 @@ export default function Home() {
           <h3 className="mb-4 font-bold text-xl">
             &quot;I need a full component library!&quot;
           </h3>
+
           <p className="mb-8 text-lg text-muted-foreground leading-relaxed">
-            Cool, install 47 components you&apos;ll never use. Or just add what
-            you need, when you need it. Revolutionary concept, I know.
+            Cool, install gazillion components you&apos;ll never use. Or just
+            add what you need, when you need it. Revolutionary concept, I know.
           </p>
 
           <h3 className="mb-4 font-bold text-xl">
