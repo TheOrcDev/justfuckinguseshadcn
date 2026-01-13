@@ -302,7 +302,14 @@ export default function Home() {
           <hr className="mb-8 border-border" />
 
           <p className="text-center text-muted-foreground text-sm leading-relaxed">
-            Inspired by{" "}
+            Built by{" "}
+            <Link
+              className="underline underline-offset-4 hover:text-foreground"
+              href="https://orcdev.com"
+            >
+              OrcDev
+            </Link>{" "}
+            with 🪓 Inspired by{" "}
             <Link
               className="underline underline-offset-4 hover:text-foreground"
               href="https://justfuckingusetailwind.com"
@@ -320,14 +327,7 @@ export default function Home() {
             >
               motherfuckingwebsite.com
             </Link>
-            , and all the other &quot;just fucking use&quot; sites. Built by{" "}
-            <Link
-              className="underline underline-offset-4 hover:text-foreground"
-              href="https://orcdev.com"
-            >
-              OrcDev
-            </Link>{" "}
-            with 🪓
+            , and all the other &quot;just fucking use&quot; sites.
           </p>
         </div>
       </section>
