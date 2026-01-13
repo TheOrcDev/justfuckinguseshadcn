@@ -46,25 +46,25 @@ importers:
         specifier: ^2.3.11
         version: 2.3.11
       '@tailwindcss/postcss':
-        specifier: ^4
+        specifier: ^4.1.18
         version: 4.1.18
       '@types/node':
-        specifier: ^20
-        version: 20.19.29
+        specifier: ^25.0.8
+        version: 25.0.8
       '@types/react':
-        specifier: ^19
+        specifier: ^19.2.8
         version: 19.2.8
       '@types/react-dom':
-        specifier: ^19
+        specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.8)
       tailwindcss:
-        specifier: ^4
+        specifier: ^4.1.18
         version: 4.1.18
       tw-animate-css:
         specifier: ^1.4.0
         version: 1.4.0
       typescript:
-        specifier: ^5
+        specifier: ^5.9.3
         version: 5.9.3
       ultracite:
         specifier: ^7.0.11
@@ -526,8 +526,8 @@ packages:
     peerDependencies:
       typescript: '>=5.7.2'
 
-  '@types/node@20.19.29':
-    resolution: {integrity: sha512-YrT9ArrGaHForBaCNwFjoqJWmn8G1Pr7+BH/vwyLHciA9qT/wSiuOhxGCT50JA5xLvFBd6PIiGkE3afxcPE1nw==}
+  '@types/node@25.0.8':
+    resolution: {integrity: sha512-powIePYMmC3ibL0UJ2i2s0WIbq6cg6UyVFQxSCpaPxxzAaziRfimGivjdF943sSGV6RADVbk0Nvlm5P/FB44Zg==}
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
@@ -851,8 +851,8 @@ packages:
       oxlint:
         optional: true
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+  undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
 
   use-sync-external-store@1.6.0:
     resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
@@ -1202,9 +1202,9 @@ snapshots:
     dependencies:
       typescript: 5.9.3
 
-  '@types/node@20.19.29':
+  '@types/node@25.0.8':
     dependencies:
-      undici-types: 6.21.0
+      undici-types: 7.16.0
 
   '@types/react-dom@19.2.3(@types/react@19.2.8)':
     dependencies:
@@ -1485,7 +1485,7 @@ snapshots:
       - typescript
       - valibot
 
-  undici-types@6.21.0: {}
+  undici-types@7.16.0: {}
 
   use-sync-external-store@1.6.0(react@19.2.3):
     dependencies:
