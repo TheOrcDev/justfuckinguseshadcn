@@ -3,6 +3,15 @@ import Link from "next/link";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 export default function Home() {
   return (
@@ -44,20 +53,22 @@ export default function Home() {
               you&apos;re still sitting there, reinventing the wheel for every
               fucking project.
             </p>
-            <div className="overflow-hidden rounded-lg border bg-muted/50">
-              <div className="border-b bg-muted/80 px-4 py-2">
-                <span className="font-mono text-muted-foreground text-sm">
-                  your-component-graveyard.tsx
-                </span>
-              </div>
-              <pre className="overflow-x-auto p-4 font-mono text-destructive text-sm leading-relaxed">
-                {`// TODO: add accessibility later
+            <Card className="gap-0 bg-muted/50 py-0">
+              <CardContent className="px-0">
+                <div className="border-b bg-muted/80 px-4 py-2">
+                  <span className="font-mono text-muted-foreground text-sm">
+                    your-component-graveyard.tsx
+                  </span>
+                </div>
+                <pre className="overflow-x-auto p-4 font-mono text-destructive text-sm leading-relaxed">
+                  {`// TODO: add accessibility later
 // TODO: fix dark mode
 // TODO: make responsive
 // FIXME: why is this breaking in Safari???
 // NOTE: copied from Stack Overflow, don't touch`}
-              </pre>
-            </div>
+                </pre>
+              </CardContent>
+            </Card>
             <p className="text-lg text-muted-foreground leading-relaxed">
               You&apos;ve got 15 different button variants, 4 modal
               implementations, and a &quot;design system&quot; that&apos;s
@@ -74,38 +85,43 @@ export default function Home() {
             </p>
           </div>
 
-          {/* What is Shadcn section */}
+          {/* What is shadcn section */}
           <div className="flex flex-col gap-6">
             <h2 className="font-extrabold text-3xl">
-              What the fuck is Shadcn?
+              What the fuck is shadcn?
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Shadcn is a collection of beautifully designed, accessible
+              shadcn is a collection of beautifully designed, accessible
               components that you copy and paste into your project. Not a
               library. Not a framework. Just code you own.
             </p>
-            <div className="overflow-hidden rounded-lg border bg-muted/50">
-              <div className="border-b bg-muted/80 px-4 py-2">
-                <span className="font-mono text-muted-foreground text-sm">
-                  Terminal
-                </span>
-              </div>
-              <div className="p-4">
-                <code className="font-mono text-sm">
-                  npx shadcn@latest add button
-                </code>
-              </div>
-            </div>
+            <Card className="gap-0 bg-muted/50 py-0">
+              <CardContent className="px-0">
+                <div className="border-b bg-muted/80 px-4 py-2">
+                  <span className="font-mono text-muted-foreground text-sm">
+                    Terminal
+                  </span>
+                </div>
+                <div className="p-4">
+                  <code className="font-mono text-sm">
+                    npx shadcn@latest add button
+                  </code>
+                </div>
+              </CardContent>
+            </Card>
             <p className="text-lg text-muted-foreground leading-relaxed">
               And here&apos;s what you get:
             </p>
-            <div className="flex flex-wrap justify-center gap-3 rounded-lg border bg-muted/30 p-8">
-              <Button>Default</Button>
-              <Button variant="secondary">Secondary</Button>
-              <Button variant="destructive">Destructive</Button>
-              <Button variant="outline">Outline</Button>
-              <Button variant="ghost">Ghost</Button>
-            </div>
+
+            <Card>
+              <CardContent className="flex flex-wrap justify-center gap-3">
+                <Button>Default</Button>
+                <Button variant="secondary">Secondary</Button>
+                <Button variant="destructive">Destructive</Button>
+                <Button variant="outline">Outline</Button>
+                <Button variant="ghost">Ghost</Button>
+              </CardContent>
+            </Card>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Accessible. Themeable. Customizable. You own the code. It just
               fucking works.
@@ -140,7 +156,7 @@ export default function Home() {
                 that yourself.
               </p>
               <Alert>
-                <Terminal className="h-4 w-4" />
+                <Terminal className="size-4" />
                 <AlertTitle>Pro tip</AlertTitle>
                 <AlertDescription>
                   Every component follows WAI-ARIA patterns. Your users with
@@ -171,7 +187,7 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <h3 className="font-bold text-xl">AI speaks shadcn fluently</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Every AI model knows Shadcn. Claude, GPT, Copilot - they&apos;ve
+                Every AI model knows shadcn. Claude, GPT, Copilot - they&apos;ve
                 all been trained on it. Ask for a component and get
                 production-ready code instantly. This is the future of UI
                 development: you describe what you want, AI builds it with
@@ -181,10 +197,10 @@ export default function Home() {
 
             <div className="flex flex-col gap-4">
               <h3 className="font-bold text-xl">
-                Build your own Shadcn (the Registry)
+                Build your own shadcn (the Registry)
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Here&apos;s the part most people miss: Shadcn isn&apos;t just a
+                Here&apos;s the part most people miss: shadcn isn&apos;t just a
                 bunch of components. It&apos;s a distribution system. With the{" "}
                 <Link
                   className="underline underline-offset-4 hover:text-foreground"
@@ -198,26 +214,28 @@ export default function Home() {
                 your whole team can install them with the CLI.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                That means you can build your own internal &quot;Shadcn&quot;:
+                That means you can build your own internal &quot;shadcn&quot;:
                 opinionated defaults, real accessibility, your design tokens,
                 your components - and still keep the best part: everything gets
                 copied into the app.
               </p>
-              <div className="overflow-hidden rounded-lg border bg-muted/50">
-                <div className="border-b bg-muted/80 px-4 py-2">
-                  <span className="font-mono text-muted-foreground text-sm">
-                    registry.json
-                  </span>
-                </div>
-                <pre className="overflow-x-auto p-4 font-mono text-sm leading-relaxed">
-                  {`{
+              <Card className="gap-0 bg-muted/50 py-0">
+                <CardContent className="px-0">
+                  <div className="border-b bg-muted/80 px-4 py-2">
+                    <span className="font-mono text-muted-foreground text-sm">
+                      registry.json
+                    </span>
+                  </div>
+                  <pre className="overflow-x-auto p-4 font-mono text-sm leading-relaxed">
+                    {`{
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "your-registry",
   "homepage": "https://your-company.com",
   "items": []
 }`}
-                </pre>
-              </div>
+                  </pre>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
@@ -254,48 +272,52 @@ export default function Home() {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Wrong. Look at what you get:
               </p>
-              <div className="overflow-hidden rounded-lg border">
-                <table className="w-full">
-                  <thead>
-                    <tr className="border-b bg-muted/50">
-                      <th className="px-4 py-3 text-left font-semibold">
-                        Category
-                      </th>
-                      <th className="px-4 py-3 text-left font-semibold">
-                        Components
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-muted-foreground">
-                    <tr className="border-b">
-                      <td className="px-4 py-3">Forms</td>
-                      <td className="px-4 py-3">
-                        Input, Select, Checkbox, Radio, Switch, Slider
-                      </td>
-                    </tr>
-                    <tr className="border-b">
-                      <td className="px-4 py-3">Feedback</td>
-                      <td className="px-4 py-3">
-                        Alert, Toast, Dialog, Sheet, Tooltip
-                      </td>
-                    </tr>
-                    <tr className="border-b">
-                      <td className="px-4 py-3">Data Display</td>
-                      <td className="px-4 py-3">
-                        Table, Card, Avatar, Badge, Calendar
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="px-4 py-3">Navigation</td>
-                      <td className="px-4 py-3">
-                        Tabs, Menu, Breadcrumb, Pagination, Command
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <Card className="gap-0 py-0">
+                <CardContent className="px-0">
+                  <Table>
+                    <TableHeader>
+                      <TableRow className="bg-muted/50 hover:bg-muted/50">
+                        <TableHead className="px-4 py-3 font-semibold">
+                          Category
+                        </TableHead>
+                        <TableHead className="px-4 py-3 font-semibold">
+                          Components
+                        </TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody className="text-muted-foreground">
+                      <TableRow>
+                        <TableCell className="px-4 py-3">Forms</TableCell>
+                        <TableCell className="px-4 py-3">
+                          Input, Select, Checkbox, Radio, Switch, Slider
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="px-4 py-3">Feedback</TableCell>
+                        <TableCell className="px-4 py-3">
+                          Alert, Toast, Dialog, Sheet, Tooltip
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="px-4 py-3">
+                          Data Display
+                        </TableCell>
+                        <TableCell className="px-4 py-3">
+                          Table, Card, Avatar, Badge, Calendar
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="px-4 py-3">Navigation</TableCell>
+                        <TableCell className="px-4 py-3">
+                          Tabs, Menu, Breadcrumb, Pagination, Command
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </CardContent>
+              </Card>
               <Alert variant="destructive">
-                <AlertCircle className="h-4 w-4" />
+                <AlertCircle className="size-4" />
                 <AlertTitle>Reality check</AlertTitle>
                 <AlertDescription>
                   You were never going to build all this yourself. And if you
@@ -308,32 +330,32 @@ export default function Home() {
           {/* When to use section */}
           <div className="flex flex-col gap-8">
             <h2 className="font-extrabold text-3xl">
-              When should you use Shadcn?
+              When should you use shadcn?
             </h2>
             <ul className="flex flex-col gap-4">
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="h-5 w-5 shrink-0 text-primary" />
-                Building a new React project? Use Shadcn.
+                <Check className="size-5 shrink-0 text-primary" />
+                Building a new React project? Use shadcn.
               </li>
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="h-5 w-5 shrink-0 text-primary" />
-                Building with AI? Use Shadcn.
+                <Check className="size-5 shrink-0 text-primary" />
+                Building with AI? Use shadcn.
               </li>
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="h-5 w-5 shrink-0 text-primary" />
-                Need accessible components? Use Shadcn.
+                <Check className="size-5 shrink-0 text-primary" />
+                Need accessible components? Use shadcn.
               </li>
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="h-5 w-5 shrink-0 text-primary" />
-                Want dark mode that works? Use Shadcn.
+                <Check className="size-5 shrink-0 text-primary" />
+                Want dark mode that works? Use shadcn.
               </li>
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="h-5 w-5 shrink-0 text-primary" />
-                Tired of fighting your component library? Use Shadcn.
+                <Check className="size-5 shrink-0 text-primary" />
+                Tired of fighting your component library? Use shadcn.
               </li>
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="h-5 w-5 shrink-0 text-primary" />
-                Want to actually ship? Use Shadcn.
+                <Check className="size-5 shrink-0 text-primary" />
+                Want to actually ship? Use shadcn.
               </li>
             </ul>
           </div>
@@ -344,12 +366,12 @@ export default function Home() {
               Stop overthinking. Start building.
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Shadcn isn&apos;t perfect. Nothing is. But it solves real problems
+              shadcn isn&apos;t perfect. Nothing is. But it solves real problems
               that UI development has had for years. So stop reading comparison
               articles, stop watching YouTube videos, stop asking Twitter.
             </p>
             <p className="text-center font-bold text-2xl md:text-3xl">
-              Just fucking use Shadcn.
+              Just fucking use shadcn.
             </p>
             <div className="flex justify-center">
               <Button asChild size="lg">
@@ -358,7 +380,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Get started <ArrowRight className="ml-2 h-4 w-4" />
+                  Get started <ArrowRight className="ml-2 size-4" />
                 </Link>
               </Button>
             </div>
