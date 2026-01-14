@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <article className="flex w-full flex-col gap-10 py-14">
+    <article className="flex w-full flex-col gap-10 pt-14">
       {/* Hero Section */}
       <section className="flex flex-col gap-10 px-6">
         <div className="mx-auto max-w-3xl text-center">
@@ -299,14 +299,7 @@ export default function Home() {
           <hr className="mb-8 border-border" />
 
           <p className="text-center text-muted-foreground text-sm leading-relaxed">
-            Built by{" "}
-            <Link
-              className="underline underline-offset-4 hover:text-foreground"
-              href="https://orcdev.com"
-            >
-              OrcDev
-            </Link>{" "}
-            with 🪓 Inspired by{" "}
+            Inspired by{" "}
             <Link
               className="underline underline-offset-4 hover:text-foreground"
               href="https://justfuckingusetailwind.com"
