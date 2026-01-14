@@ -253,7 +253,7 @@ export default function Home() {
               <Check className="h-5 w-5 shrink-0 text-primary" />
               Building a new React project? Use Shadcn.
             </li>
-            <li>
+            <li className="flex items-center gap-3 text-lg text-muted-foreground">
               <Check className="h-5 w-5 shrink-0 text-primary" />
               Building with AI? Use Shadcn.
             </li>
