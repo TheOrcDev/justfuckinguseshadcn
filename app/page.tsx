@@ -284,7 +284,7 @@ export default function Home() {
               <div className="flex flex-col gap-2">
                 <Link
                   className="font-bold text-lg underline underline-offset-4 hover:text-muted-foreground"
-                  href="https://ai-elements.haydenbleasel.com"
+                  href="https://ai-sdk.dev/elements"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -299,7 +299,7 @@ export default function Home() {
               <div className="flex flex-col gap-2">
                 <Link
                   className="font-bold text-lg underline underline-offset-4 hover:text-muted-foreground"
-                  href="https://nuqs.47ng.com"
+                  href="https://nuqs.dev/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -314,7 +314,7 @@ export default function Home() {
               <div className="flex flex-col gap-2">
                 <Link
                   className="font-bold text-lg underline underline-offset-4 hover:text-muted-foreground"
-                  href="https://www.tailark.com"
+                  href="https://tailark.com/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
