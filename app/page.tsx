@@ -165,6 +165,46 @@ export default function Home() {
             what you want, AI builds it with shadcn. No more Googling docs.
           </p>
 
+          <h3 className="mb-4 font-bold text-xl">
+            Build your own Shadcn (the Registry)
+          </h3>
+          <p className="mb-6 text-lg text-muted-foreground leading-relaxed">
+            Here&apos;s the part most people miss: Shadcn isn&apos;t just a
+            bunch of components. It&apos;s a distribution system. With the{" "}
+            <Link
+              className="underline underline-offset-4 hover:text-foreground"
+              href="https://ui.shadcn.com/docs/registry"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Registry
+            </Link>
+            , you can publish your own components, blocks, and patterns so your
+            whole team can install them with the CLI.
+          </p>
+          <p className="mb-8 text-lg text-muted-foreground leading-relaxed">
+            That means you can build your own internal &quot;Shadcn&quot;:
+            opinionated defaults, real accessibility, your design tokens, your
+            components - and still keep the best part: everything gets copied
+            into the app.
+          </p>
+
+          <div className="mb-8 overflow-hidden rounded-lg border bg-muted/50">
+            <div className="border-b bg-muted/80 px-4 py-2">
+              <span className="font-mono text-muted-foreground text-sm">
+                registry.json
+              </span>
+            </div>
+            <pre className="overflow-x-auto p-4 font-mono text-sm leading-relaxed">
+              {`{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "your-registry",
+  "homepage": "https://your-company.com",
+  "items": []
+}`}
+            </pre>
+          </div>
+
           <h2 className="mb-8 font-extrabold text-3xl">
             &quot;But wait...&quot;
           </h2>
