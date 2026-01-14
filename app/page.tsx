@@ -99,7 +99,7 @@ export default function Home() {
               <CardContent className="px-0">
                 <div className="border-b bg-muted/80 px-4 py-2">
                   <span className="font-mono text-muted-foreground text-sm">
-                    Terminal
+                    terminal
                   </span>
                 </div>
                 <div className="p-4">
@@ -237,6 +237,100 @@ export default function Home() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+
+          {/* Registries section */}
+          <div className="flex flex-col gap-8">
+            <h2 className="font-extrabold text-3xl">
+              The ecosystem is fucking massive
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              shadcn isn&apos;t just one library. It&apos;s an entire ecosystem
+              of registries built by the community. Whatever you need, there's
+              probably a registry for it.
+            </p>
+
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2">
+                <Link
+                  className="font-bold text-lg underline underline-offset-4 hover:text-muted-foreground"
+                  href="https://8bitcn.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  8bitcn
+                </Link>
+                <p className="text-muted-foreground leading-relaxed">
+                  Need retro 8-bit styled components? There&apos;s a registry
+                  for that.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <Link
+                  className="font-bold text-lg underline underline-offset-4 hover:text-muted-foreground"
+                  href="https://www.reactbits.dev"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  React Bits
+                </Link>
+                <p className="text-muted-foreground leading-relaxed">
+                  Need high-quality animations and effects? There&apos;s a
+                  registry for that.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <Link
+                  className="font-bold text-lg underline underline-offset-4 hover:text-muted-foreground"
+                  href="https://ai-elements.haydenbleasel.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  AI Elements
+                </Link>
+                <p className="text-muted-foreground leading-relaxed">
+                  Need AI-focused UI components? There&apos;s a registry for
+                  that.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <Link
+                  className="font-bold text-lg underline underline-offset-4 hover:text-muted-foreground"
+                  href="https://nuqs.47ng.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  nuqs
+                </Link>
+                <p className="text-muted-foreground leading-relaxed">
+                  Need type-safe URL search params? There&apos;s a registry for
+                  that.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <Link
+                  className="font-bold text-lg underline underline-offset-4 hover:text-muted-foreground"
+                  href="https://www.tailark.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Tailark
+                </Link>
+                <p className="text-muted-foreground leading-relaxed">
+                  Need landing page blocks and templates? There&apos;s a
+                  registry for that.
+                </p>
+              </div>
+            </div>
+
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              And that&apos;s just the beginning. The shadcn registry format is
+              open, so anyone can build and share components.
+            </p>
           </div>
 
           {/* But wait section */}
