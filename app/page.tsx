@@ -73,10 +73,10 @@ export default function Home() {
           </p>
 
           <h2 className="mb-6 font-extrabold text-3xl">
-            What the fuck is shadcn/ui?
+            What the fuck is Shadcn?
           </h2>
           <p className="mb-6 text-lg text-muted-foreground leading-relaxed">
-            shadcn/ui is a collection of beautifully designed, accessible
+            Shadcn is a collection of beautifully designed, accessible
             components that you copy and paste into your project. Not a library.
             Not a framework. Just code you own.
           </p>
@@ -159,8 +159,8 @@ export default function Home() {
 
           <h3 className="mb-4 font-bold text-xl">AI speaks shadcn fluently</h3>
           <p className="mb-16 text-lg text-muted-foreground leading-relaxed">
-            Every AI model knows shadcn/ui. Claude, GPT, Copilot - they&apos;ve
-            all been trained on it. Ask for a component and get production-ready
+            Every AI model knows Shadcn. Claude, GPT, Copilot - they&apos;ve all
+            been trained on it. Ask for a component and get production-ready
             code instantly. This is the future of UI development: you describe
             what you want, AI builds it with shadcn. No more Googling docs.
           </p>
@@ -245,29 +245,29 @@ export default function Home() {
           </Alert>
 
           <h2 className="mb-8 font-extrabold text-3xl">
-            When should you use shadcn/ui?
+            When should you use Shadcn?
           </h2>
 
           <ul className="mb-16 space-y-4">
             <li className="flex items-center gap-3 text-lg text-muted-foreground">
               <Check className="h-5 w-5 shrink-0 text-primary" />
-              Building a new React project? Use shadcn/ui.
+              Building a new React project? Use Shadcn.
             </li>
             <li className="flex items-center gap-3 text-lg text-muted-foreground">
               <Check className="h-5 w-5 shrink-0 text-primary" />
-              Need accessible components? Use shadcn/ui.
+              Need accessible components? Use Shadcn.
             </li>
             <li className="flex items-center gap-3 text-lg text-muted-foreground">
               <Check className="h-5 w-5 shrink-0 text-primary" />
-              Want dark mode that works? Use shadcn/ui.
+              Want dark mode that works? Use Shadcn.
             </li>
             <li className="flex items-center gap-3 text-lg text-muted-foreground">
               <Check className="h-5 w-5 shrink-0 text-primary" />
-              Tired of fighting your component library? Use shadcn/ui.
+              Tired of fighting your component library? Use Shadcn.
             </li>
             <li className="flex items-center gap-3 text-lg text-muted-foreground">
               <Check className="h-5 w-5 shrink-0 text-primary" />
-              Want to actually ship instead of bikeshedding? Use shadcn/ui.
+              Want to actually ship instead of bikeshedding? Use Shadcn.
             </li>
           </ul>
 
@@ -275,14 +275,13 @@ export default function Home() {
             Stop overthinking. Start building.
           </h2>
           <p className="mb-8 text-lg text-muted-foreground leading-relaxed">
-            shadcn/ui isn&apos;t perfect. Nothing is. But it solves real
-            problems that UI development has had for years. So stop reading
-            comparison articles, stop watching YouTube videos, stop asking
-            Twitter.
+            Shadcn isn&apos;t perfect. Nothing is. But it solves real problems
+            that UI development has had for years. So stop reading comparison
+            articles, stop watching YouTube videos, stop asking Twitter.
           </p>
 
           <p className="mb-12 text-center font-bold text-2xl md:text-3xl">
-            Just fucking use shadcn/ui.
+            Just fucking use Shadcn.
           </p>
 
           <div className="mb-16 flex justify-center">
