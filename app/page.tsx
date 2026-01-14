@@ -158,7 +158,7 @@ export default function Home() {
           </p>
 
           <h3 className="mb-4 font-bold text-xl">AI speaks shadcn fluently</h3>
-          <p className="mb-16 text-lg text-muted-foreground leading-relaxed">
+          <p className="mb-4 text-lg text-muted-foreground leading-relaxed">
             Every AI model knows Shadcn. Claude, GPT, Copilot - they&apos;ve all
             been trained on it. Ask for a component and get production-ready
             code instantly. This is the future of UI development: you describe
