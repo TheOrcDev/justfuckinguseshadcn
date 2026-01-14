@@ -14,7 +14,7 @@ export function Footer() {
         >
           OrcDev
         </Link>{" "}
-        with 🪓 Inspired by{" "}
+        with 🪓
       </p>
       <ModeSwitcher />
     </footer>
