@@ -299,7 +299,7 @@ export default function Home() {
               <div className="flex flex-col gap-2">
                 <Link
                   className="font-bold text-lg underline underline-offset-4 hover:text-muted-foreground"
-                  href="https://nuqs.dev/"
+                  href="https://nuqs.dev/registry"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
