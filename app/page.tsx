@@ -470,7 +470,7 @@ export default function Home() {
             <div className="flex justify-center">
               <Button asChild size="lg">
                 <Link
-                  href="https://ui.shadcn.com"
+                  href="https://ui.shadcn.com?utm_source=justfuckinguseshadcn"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
