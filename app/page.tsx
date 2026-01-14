@@ -173,9 +173,9 @@ export default function Home() {
             &quot;Copy-paste is bad practice!&quot;
           </h3>
           <p className="mb-8 text-lg text-muted-foreground leading-relaxed">
-            Is it? You copy-paste from Stack Overflow every day. At least this
-            code is tested, accessible, and well-designed. Plus you can actually
-            modify it without forking a repo.
+            Is it? You used to copy-paste from Stack Overflow every day. At
+            least this code is tested, accessible, and well-designed. Plus you
+            can actually modify it without forking a repo.
           </p>
 
           <h3 className="mb-4 font-bold text-xl">
@@ -253,6 +253,10 @@ export default function Home() {
               <Check className="h-5 w-5 shrink-0 text-primary" />
               Building a new React project? Use Shadcn.
             </li>
+            <li>
+              <Check className="h-5 w-5 shrink-0 text-primary" />
+              Building with AI? Use Shadcn.
+            </li>
             <li className="flex items-center gap-3 text-lg text-muted-foreground">
               <Check className="h-5 w-5 shrink-0 text-primary" />
               Need accessible components? Use Shadcn.
@@ -267,7 +271,7 @@ export default function Home() {
             </li>
             <li className="flex items-center gap-3 text-lg text-muted-foreground">
               <Check className="h-5 w-5 shrink-0 text-primary" />
-              Want to actually ship instead of bikeshedding? Use Shadcn.
+              Want to actually ship? Use Shadcn.
             </li>
           </ul>
 
