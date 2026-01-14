@@ -15,7 +15,7 @@ You can fork this repo by clicking the fork button in the top right corner of th
 ### Clone on your local machine
 
 ```bash
-git clone https://github.com/theorcdev/justfuckinguseshadcn.git
+git clone https://github.com/yourusername/justfuckinguseshadcn.git
 ```
 
 ### Navigate to project directory
