@@ -23,7 +23,7 @@ export default function Home() {
             Stop overthinking your UI components
           </p>
           <h1 className="font-black text-5xl leading-tight md:text-7xl md:leading-tight">
-            Just Fucking Use Shadcn
+            Just Fucking Use shadcn
           </h1>
           <p className="mx-auto max-w-2xl text-muted-foreground text-xl leading-relaxed">
             You&apos;ve spent years building buttons from scratch, fighting CSS
@@ -426,29 +426,29 @@ export default function Home() {
             <h2 className="font-extrabold text-3xl">
               When should you use shadcn?
             </h2>
-            <ul className="flex flex-col gap-4">
+            <ul className="flex flex-col gap-4 **:[svg]:text-muted-foreground/50">
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="size-5 shrink-0 text-primary" />
+                <Check className="size-5 shrink-0" />
                 Building a new React project? Use shadcn.
               </li>
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="size-5 shrink-0 text-primary" />
+                <Check className="size-5 shrink-0" />
                 Building with AI? Use shadcn.
               </li>
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="size-5 shrink-0 text-primary" />
+                <Check className="size-5 shrink-0" />
                 Need accessible components? Use shadcn.
               </li>
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="size-5 shrink-0 text-primary" />
+                <Check className="size-5 shrink-0" />
                 Want dark mode that works? Use shadcn.
               </li>
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="size-5 shrink-0 text-primary" />
+                <Check className="size-5 shrink-0" />
                 Tired of fighting your component library? Use shadcn.
               </li>
               <li className="flex items-center gap-3 text-lg text-muted-foreground">
-                <Check className="size-5 shrink-0 text-primary" />
+                <Check className="size-5 shrink-0" />
                 Want to actually ship? Use shadcn.
               </li>
             </ul>
@@ -464,17 +464,20 @@ export default function Home() {
               that UI development has had for years. So stop reading comparison
               articles, stop watching YouTube videos, stop asking Twitter.
             </p>
-            <p className="text-center font-bold text-2xl md:text-3xl">
-              Just fucking use shadcn.
-            </p>
-            <div className="flex justify-center">
-              <Button asChild size="lg">
+            <p className="font-bold text-2xl">Just fucking use shadcn.</p>
+            <div className="flex">
+              <Button
+                asChild
+                className="h-12 gap-2.5 px-4 font-bold text-base"
+                size="lg"
+              >
                 <Link
                   href="https://ui.shadcn.com?utm_source=justfuckinguseshadcn"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Get started <ArrowRight className="ml-2 size-4" />
+                  Get started
+                  <ArrowRight strokeWidth={3} />
                 </Link>
               </Button>
             </div>
@@ -483,7 +486,7 @@ export default function Home() {
           {/* Footer */}
           <div className="flex flex-col gap-8">
             <hr className="border-border" />
-            <p className="text-center text-muted-foreground text-sm leading-relaxed">
+            <p className="text-balance text-center text-muted-foreground text-sm leading-relaxed">
               Inspired by{" "}
               <Link
                 className="underline underline-offset-4 hover:text-foreground"
@@ -502,7 +505,8 @@ export default function Home() {
               >
                 motherfuckingwebsite.com
               </Link>
-              , and all the other &quot;just fucking use&quot; sites.
+              , <span className="sm:block" />
+              and all the other &quot;just fucking use&quot; sites.
             </p>
           </div>
         </div>
