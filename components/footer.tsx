@@ -21,6 +21,7 @@ export function Footer() {
         <Button asChild size="icon-sm" variant="ghost">
           <Link
             href="https://github.com/TheOrcDev/justfuckinguseshadcn"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <svg className="size-4 fill-current" viewBox="0 0 24 24">
