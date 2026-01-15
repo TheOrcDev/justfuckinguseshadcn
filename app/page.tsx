@@ -33,7 +33,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center">
-          <Avatar className="size-96">
+          <Avatar className="size-48 sm:size-96">
             <AvatarImage src="/shadcn.jpeg" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
