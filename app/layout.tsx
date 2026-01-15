@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Just Fucking Use Shadcn",
+  title: "Just Fucking Use shadcn",
   description:
-    "Stop overthinking your UI components. Shadcn gives you beautifully designed, accessible components you actually own. Copy, paste, customize. It just works.",
+    "Stop overthinking your UI components. shadcn gives you beautifully designed, accessible components you actually own. Copy, paste, customize. It just works.",
   keywords: [
     "shadcn",
     "shadcn/ui",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   authors: [{ name: "OrcDev", url: "https://orcdev.com" }],
   creator: "OrcDev",
   openGraph: {
-    title: "Just Fucking Use Shadcn",
+    title: "Just Fucking Use shadcn",
     description:
       "Stop overthinking your UI components. Copy, paste, customize. It just works.",
     type: "website",
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og.png",
-        alt: "Just Fucking Use Shadcn",
+        alt: "Just Fucking Use shadcn",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Just Fucking Use Shadcn",
+    title: "Just Fucking Use shadcn",
     description:
       "Stop overthinking your UI components. Copy, paste, customize. It just works.",
   },

@@ -1,4 +1,4 @@
-# Just Fucking Use Shadcn
+# Just Fucking Use shadcn
 
 A satirical love letter to [shadcn/ui](https://ui.shadcn.com) - the component library you should've been using all along.
 
@@ -10,4 +10,4 @@ See [contributing.md](./contributing.md).
 
 ## License
 
-MIT
+Licensed under the [MIT license](./LICENSE).
