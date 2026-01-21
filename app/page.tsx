@@ -361,7 +361,7 @@ export default function Home() {
 
             <div className="flex flex-col gap-4">
               <h3 className="font-bold text-xl">
-                &quot;My code is quickly becoming an unmaintainable mess.!&quot;
+                &quot;My code is quickly becoming an unmaintainable mess!&quot;
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Maintaining duplicated logic used to be painful. Now AI does the 
