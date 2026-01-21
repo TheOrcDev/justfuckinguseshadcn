@@ -361,6 +361,20 @@ export default function Home() {
 
             <div className="flex flex-col gap-4">
               <h3 className="font-bold text-xl">
+                &quot;My code is quickly becoming an unmaintainable mess.!&quot;
+              </h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Maintaining duplicated logic used to be painful. Now AI does the 
+                heavy lifting—updating and refactoring verbose components in seconds. 
+                Since shadcn drops the full source straight into your project, the 
+                AI has full context to customize everything exactly how you want. 
+                What was once a messy pile of cloned code becomes a clean, tailored 
+                UI—driven by a simple prompt.
+              </p>
+            </div>            
+
+            <div className="flex flex-col gap-4">
+              <h3 className="font-bold text-xl">
                 &quot;It&apos;s just UI primitives!&quot;
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
