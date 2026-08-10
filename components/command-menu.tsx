@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
+  Command,
   CommandDialog,
   CommandEmpty,
   CommandGroup,
@@ -63,47 +64,49 @@ export function CommandMenu() {
         open={open}
         title="Navigate this site"
       >
-        <CommandInput placeholder="Search pages and resources..." />
-        <CommandList>
-          <CommandEmpty>No matching destination found.</CommandEmpty>
-          <CommandGroup heading="On this page">
-            <CommandItem onSelect={() => navigate("/#what-is-shadcn")}>
-              <BookOpenIcon />
-              What is shadcn?
-            </CommandItem>
-            <CommandItem onSelect={() => navigate("/#why-shadcn")}>
-              <CircleHelpIcon />
-              Why shadcn works
-            </CommandItem>
-            <CommandItem onSelect={() => navigate("/#ecosystem")}>
-              <BoxesIcon />
-              Explore the ecosystem
-            </CommandItem>
-            <CommandItem onSelect={() => navigate("/#when-to-use")}>
-              <RocketIcon />
-              When to use shadcn
-            </CommandItem>
-          </CommandGroup>
-          <CommandSeparator />
-          <CommandGroup heading="Resources">
-            <CommandItem
-              onSelect={() => openExternal("https://ui.shadcn.com/docs")}
-            >
-              <BookOpenIcon />
-              Open shadcn documentation
-            </CommandItem>
-            <CommandItem
-              onSelect={() =>
-                openExternal(
-                  "https://github.com/TheOrcDev/justfuckinguseshadcn"
-                )
-              }
-            >
-              <GitForkIcon />
-              Open this project on GitHub
-            </CommandItem>
-          </CommandGroup>
-        </CommandList>
+        <Command>
+          <CommandInput placeholder="Search pages and resources..." />
+          <CommandList>
+            <CommandEmpty>No matching destination found.</CommandEmpty>
+            <CommandGroup heading="On this page">
+              <CommandItem onSelect={() => navigate("/#what-is-shadcn")}>
+                <BookOpenIcon />
+                What is shadcn?
+              </CommandItem>
+              <CommandItem onSelect={() => navigate("/#why-shadcn")}>
+                <CircleHelpIcon />
+                Why shadcn works
+              </CommandItem>
+              <CommandItem onSelect={() => navigate("/#ecosystem")}>
+                <BoxesIcon />
+                Explore the ecosystem
+              </CommandItem>
+              <CommandItem onSelect={() => navigate("/#when-to-use")}>
+                <RocketIcon />
+                When to use shadcn
+              </CommandItem>
+            </CommandGroup>
+            <CommandSeparator />
+            <CommandGroup heading="Resources">
+              <CommandItem
+                onSelect={() => openExternal("https://ui.shadcn.com/docs")}
+              >
+                <BookOpenIcon />
+                Open shadcn documentation
+              </CommandItem>
+              <CommandItem
+                onSelect={() =>
+                  openExternal(
+                    "https://github.com/TheOrcDev/justfuckinguseshadcn"
+                  )
+                }
+              >
+                <GitForkIcon />
+                Open this project on GitHub
+              </CommandItem>
+            </CommandGroup>
+          </CommandList>
+        </Command>
       </CommandDialog>
     </>
   );
