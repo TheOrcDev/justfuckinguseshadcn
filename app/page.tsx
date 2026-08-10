@@ -477,7 +477,7 @@ export default function Home() {
                   target="_blank"
                 >
                   Get started
-                  <ArrowRight strokeWidth={3} />
+                  <ArrowRight data-icon="inline-end" strokeWidth={3} />
                 </Link>
               </Button>
             </div>
