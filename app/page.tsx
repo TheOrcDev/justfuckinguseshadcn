@@ -73,7 +73,7 @@ export default function Home() {
               You&apos;ve got 15 different button variants, 4 modal
               implementations, and a &quot;design system&quot; that&apos;s
               really just a folder called{" "}
-              <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-base">
+              <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-base text-foreground">
                 components-v2-final-FINAL
               </code>
               . Half of it doesn&apos;t work on mobile. The other half fails
@@ -138,7 +138,7 @@ export default function Home() {
               <h3 className="font-bold text-xl">You own the code</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 No{" "}
-                <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-base">
+                <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-base text-foreground">
                   node_modules
                 </code>{" "}
                 black box. No waiting for library updates. No &quot;sorry,
@@ -169,7 +169,7 @@ export default function Home() {
               <h3 className="font-bold text-xl">Dark mode in seconds</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 No CSS variable nightmares. No theme context hell. Just add the{" "}
-                <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-base">
+                <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-base text-foreground">
                   dark
                 </code>{" "}
                 class to your HTML and everything works.
