@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { SITE_URL } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Just Fucking Use shadcn",
   description:
     "Stop overthinking your UI components. shadcn gives you beautifully designed, accessible components you actually own. Copy, paste, customize. It just works.",
@@ -33,12 +35,16 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "OrcDev", url: "https://orcdev.com" }],
   creator: "OrcDev",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Just Fucking Use shadcn",
     description:
       "Stop overthinking your UI components. Copy, paste, customize. It just works.",
     type: "website",
     locale: "en_US",
+    url: "/",
     images: [
       {
         url: "/og.png",
@@ -51,6 +57,7 @@ export const metadata: Metadata = {
     title: "Just Fucking Use shadcn",
     description:
       "Stop overthinking your UI components. Copy, paste, customize. It just works.",
+    images: ["/og.png"],
   },
 };
 
