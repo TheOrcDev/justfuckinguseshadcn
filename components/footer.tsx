@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CommandMenu } from "./command-menu";
 import { ModeSwitcher } from "./mode-switcher";
 import { Button } from "./ui/button";
 
@@ -18,6 +19,7 @@ export function Footer() {
         with 🪓
       </p>
       <div className="flex items-center gap-1">
+        <CommandMenu />
         <Button asChild size="icon-sm" variant="ghost">
           <Link
             href="https://github.com/TheOrcDev/justfuckinguseshadcn"

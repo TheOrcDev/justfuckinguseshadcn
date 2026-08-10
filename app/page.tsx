@@ -86,7 +86,7 @@ export default function Home() {
           </div>
 
           {/* What is shadcn section */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6" id="what-is-shadcn">
             <h2 className="font-extrabold text-3xl">
               What the fuck is shadcn?
             </h2>
@@ -129,7 +129,7 @@ export default function Home() {
           </div>
 
           {/* Why it's great section */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8" id="why-shadcn">
             <h2 className="font-extrabold text-3xl">
               Why it&apos;s fucking great
             </h2>
@@ -240,7 +240,7 @@ export default function Home() {
           </div>
 
           {/* Registries section */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8" id="ecosystem">
             <h2 className="font-extrabold text-3xl">
               The ecosystem is fucking massive
             </h2>
@@ -422,7 +422,7 @@ export default function Home() {
           </div>
 
           {/* When to use section */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8" id="when-to-use">
             <h2 className="font-extrabold text-3xl">
               When should you use shadcn?
             </h2>
