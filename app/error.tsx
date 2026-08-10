@@ -16,7 +16,9 @@ export default function ErrorBoundary({ reset }: { reset: () => void }) {
     <main className="grid min-h-[60vh] place-items-center px-6 py-16">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle>Something went wrong</CardTitle>
+          <CardTitle>
+            <h1>Something went wrong</h1>
+          </CardTitle>
           <CardDescription>
             The page hit an unexpected problem before it could finish loading.
           </CardDescription>

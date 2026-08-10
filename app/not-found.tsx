@@ -14,7 +14,9 @@ export default function NotFound() {
     <main className="grid min-h-[60vh] place-items-center px-6 py-16">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle>Page not found</CardTitle>
+          <CardTitle>
+            <h1>Page not found</h1>
+          </CardTitle>
           <CardDescription>
             This route does not exist, or it may have moved somewhere else.
           </CardDescription>
